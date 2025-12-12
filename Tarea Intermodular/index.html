@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightReserve</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <!-- Header -->
+    <header class="header_section">
+        <div class="header_container">
+        <div class="logo">
+            <a href="#">
+                <i class="fas fa-plane"></i> FlightReserve
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="#hero_section" class="nav_link"><i class="fas fa-ticket-alt"></i> My Reservations</a>
+            <a href="#services_section" class="nav_link"><i class="fas fa-cog"></i> Services</a>
+            <a href="#reservation_section" class="nav_link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="#contact_section" class="nav_link"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <div class="header_icons">
+            <span class="icon_span"><i class="fas fa-globe"></i></span>
+            <span class="icon_span"><i class="fas fa-bell"></i></span>
+            <span class="icon_span"><i class="fas fa-heart"></i></span>
+            <span class="icon_span"><i class="fas fa-user"></i></span>
+        </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero_section">
+    <div class="hero_content">
+
+        <div class="reservations-group">
+        <span><i class="fas fa-plane"></i> Flights</span>
+        <span class="car-reservations" ><i class="fas fa-car"></i> Cars</span>
+        <span class="hotel-reservations" ><i class="fas fa-hotel"></i> Hotels</span>
+        </div>
+
+        <h1>Your Journey Begins Here</h1>
+        <p>Find the best deals on flights, hotels, and car rentals all in one place.</p>
+
+        <div class="input_wrapper">
+        <!-- Origen -->
+        <div class="input_group">
+            <label for="origin"><i class="fas fa-map-marker-alt"></i> From</label>
+            <input type="text" id="origin" placeholder="Select origin">
+        </div>
+
+        <!-- Destino -->
+        <div class="input_group">
+            <label for="destination"><i class="fas fa-map-marker-alt"></i> To</label>
+            <input type="text" id="destination" placeholder="Select destination">
+        </div>
+
+        <!-- Pasajeros -->
+        <div class="input_group">
+            <label for="passengers"><i class="fas fa-user-friends"></i> Passengers</label>
+            <input type="number" id="passengers" min="1" max="10" value="1">
+        </div>
+
+        <!-- Botón -->
+        <div class="input_group">
+            <button class="search_button"><i class="fas fa-search"></i> Search</button>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+</body>
+</html>
