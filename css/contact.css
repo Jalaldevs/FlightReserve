@@ -1,0 +1,126 @@
+/* Reset & basic setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form container */
+.contact-form {
+    background: #fff;
+    padding: 50px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Form title */
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 34px; /* más grande */
+    font-weight: 700;
+}
+
+.logo a {
+    color: #000000 !important;
+}
+
+/* Labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Inputs, select, textarea */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Validaciones solo al interactuar */
+.contact-form input:focus:invalid,
+.contact-form select:focus:invalid,
+.contact-form textarea:focus:invalid {
+    border-color: #e74c3c;
+    box-shadow: 0 0 8px rgba(231,76,60,0.3);
+}
+
+/* Focus normal */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 8px rgba(116,235,213,0.3);
+    outline: none;
+}
+
+/* Textarea specific */
+.contact-form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+/* Button */
+.contact-form button {
+    width: 100%;
+    padding: 18px;
+    background: #070707;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 35px 20px;
+    }
+
+    .contact-form .logo {
+        font-size: 28px;
+    }
+
+    .contact-form button {
+        font-size: 18px;
+        padding: 16px;
+    }
+}

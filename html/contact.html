@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="/css/contact.css">
+    </head>
+    <body>
+        <form class="contact-form">
+            <div class="logo">
+                <a href="/index.html">
+                    <i class="fas fa-plane"></i> FlightReserve
+                </a>
+            </div>
+            
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required minlength="3">
+            
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+                <option value="">-- Select Subject --</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            
+            </select>
+            
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required minlength="10"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </body>
+</html>

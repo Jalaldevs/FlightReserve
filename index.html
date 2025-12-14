@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlightReserve</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="hero_wrapper">
+            <header class="header_section">
+                <div class="header_container">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <i class="fas fa-plane"></i> FlightReserve
+                        </a>
+                    </div>
+                    <nav class="navigation">
+                        <a href="#hero_section" class="nav_link"><i class="fas fa-ticket-alt"></i> My Reservations</a>
+                        <a href="#reservation_section" class="nav_link"><i class="fas fa-question-circle"></i> FAQ</a>
+                        <a href="/html/contact.html" class="nav_link"><i class="fas fa-envelope"></i> Contact</a>
+                    </nav>
+                    <div class="header_icons">
+                        <span class="icon_span"><i class="fas fa-globe"></i></span>
+                        <span class="icon_span"><i class="fas fa-bell"></i></span>
+                        <span class="icon_span"><i class="fas fa-heart"></i></span>
+                        <span class="icon_span login_span"><i class="fas fa-user"></i> Login</span>
+                    </div>
+                </div>
+            </header>
+            <section class="hero_section">
+                <div class="hero_content">
+                    <h1>Your Journey Begins Here</h1>
+                    <p>Find the best deals on flights, hotels, and car rentals all in one place.</p>
+                    <div class="input_wrapper">
+                        <div class="input_group">
+                            <label for="origin"><i class="fas fa-map-marker-alt"></i> From</label>
+                            <input type="text" id="origin" placeholder="Select origin">
+                        </div>
+                        <div class="input_group">
+                            <label for="destination"><i class="fas fa-map-marker-alt"></i> To</label>
+                            <input type="text" id="destination" placeholder="Select destination">
+                        </div>
+                        <div class="input_group">
+                            <label for="passengers"><i class="fas fa-user-friends"></i> Passengers</label>
+                            <input type="number" id="passengers" min="1" max="10" value="1">
+                        </div>
+                        <div class="input_group">
+                            <button class="search_button"><i class="fas fa-search"></i> Search</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <main>
+            <section class="destinations_section">
+                <h2 class="section_title">Popular Destinations</h2>
+                <div class="destinations_grid">
+                    <div class="destination_card" style="background-image:url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80')">
+                        <div class="favorite_icon"><i class="fas fa-heart"></i></div>
+                        <div class="destination_info">
+                            <span>Dubai</span>
+                            <small>From €620</small>
+                        </div>
+                    </div>
+                    <div class="destination_card" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80')">
+                        <div class="favorite_icon"><i class="fas fa-heart"></i></div>
+                        <div class="destination_info">
+                            <span>Paris</span>
+                            <small>From €180</small>
+                        </div>
+                    </div>
+                    <div class="destination_card" style="background-image:url('https://images.unsplash.com/photo-1500043357865-c6b8827edf10?auto=format&fit=crop&w=800&q=80')">
+                        <div class="favorite_icon"><i class="fas fa-heart"></i></div>
+                        <div class="destination_info">
+                            <span>Istanbul</span>
+                            <small>From €240</small>
+                        </div>
+                    </div>
+            </section>
+            <section id="services_section" class="services_section">
+                <h2 class="section_title">Our Services</h2>
+                <div class="services_grid">
+                    <div class="service_card">
+                        <i class="fas fa-plane-departure"></i>
+                        <h3>Flight Booking</h3>
+                        <p>Compare and book flights from trusted airlines worldwide.</p>
+                    </div>
+                    <div class="service_card">
+                        <i class="fas fa-hotel"></i>
+                        <h3>Hotel Reservations</h3>
+                        <p>Find comfortable hotels at the best prices.</p>
+                    </div>
+                    <div class="service_card">
+                        <i class="fas fa-car"></i>
+                        <h3>Car Rentals</h3>
+                        <p>Easy and affordable car rentals for your trips.</p>
+                    </div>
+                    <div class="service_card">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Our support team is always available to help you.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="reservation_section" class="faq_section">
+                <h2 class="section_title">Frequently Asked Questions</h2>
+                <div class="faq_container">
+                    <details>
+                        <summary>Can I cancel my reservation?</summary>
+                        <p>Yes, cancellation depends on the airline or provider policy.</p>
+                    </details>
+                    <details>
+                        <summary>Can I change my booking?</summary>
+                        <p>Yes, bookings can be modified up to 24 hours before the scheduled flight. Some changes may incur a fee.</p>
+                    </details>
+                    <details>
+                        <summary>Is payment secure?</summary>
+                        <p>We use secure and encrypted payment methods.</p>
+                    </details>
+                    <details>
+                        <summary>Can I change my travel dates?</summary>
+                        <p>Date changes are subject to airline availability and fare conditions.</p>
+                    </details>
+                </div>
+            </section>
+        </main>
+        <footer class="footer_section">
+            <div class="footer_container">
+                <h2 class="footer_title">Need Help?</h2>
+                <div class="footer_items">
+                    <div class="footer_item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@flightreserve.com</span>
+                    </div>
+                    <div class="footer_item">
+                        <i class="fas fa-phone"></i>
+                        <span>+34 600 000 000</span>
+                    </div>
+                    <div class="footer_item">
+                        <i class="fas fa-clock"></i>
+                        <span>Available 24/7</span>
+                    </div>
+                </div>
+                <p class="footer_copy">© 2025 FlightReserve. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

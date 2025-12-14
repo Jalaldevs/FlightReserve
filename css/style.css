@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+}
+.header_section {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 100;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+
+}
+.header_container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_icons i {
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.logo a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+.nav_link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+.nav_link:hover {
+    color: #ff9900;
+}
+.login_span {
+    background-color: transparent;
+    backdrop-filter: blur(-15px);
+    padding: 0.6rem 1.3rem 0.6rem 0;
+    border-radius: 1.6rem;
+    color: white;
+}
+/* Hero StaRTS */
+.hero_wrapper{
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero_section::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+h1 {
+    font-size: 2.5rem;
+}
+.hero_content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    color: #fff;
+}
+.reservations-group {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 1.2rem;
+}
+.reservations-group span i {
+    font-size: 36px;
+    margin-bottom: 8px;
+    color: #ff9900;
+}
+.reservations-group span:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* Inputs */
+.input_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.input_group {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.input_group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #fff;
+}
+.input_group input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.search_button {
+    padding: 12px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.search_button:hover {
+    background: #e68a00;
+}
+/* Shared */
+.section_title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Services */
+.services_section {
+    padding: 80px 40px;
+    background: #f9f9f9;
+}
+
+.services_grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.service_card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service_card i {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+/* Destinations */
+.destinations_section {
+    padding: 80px 40px;
+}
+
+.destinations_grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.destination_card {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination_card span {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.destination_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.25);
+}
+
+.destination_card small {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: white;
+    color: rgba(0,0,0,0.6);
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.destination_info {
+    display: grid;
+    place-content: center;
+}
+
+.favorite_icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.4);
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    z-index: 10;
+}
+
+.favorite_icon i {
+    color: rgb(255, 255, 255); /* red heart */
+    font-size: 16px;
+}
+
+.favorite_icon:hover {
+    transform: scale(1.2);
+    background: rgba(0,0,0,0.6);
+}
+
+/* FAQ */
+.faq_section {
+    padding: 80px 40px;
+    background: #f9f9f9;
+}
+
+.faq_container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq_container details {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+details p {
+    padding: 1rem;
+}
+/* footer */
+.footer_section {
+    background: linear-gradient(135deg, #2f343a, #3b4148);
+    color: white;
+    padding: 70px 40px 40px;
+}
+
+.footer_container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer_title {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+}
+
+.footer_items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.footer_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.footer_item i {
+    color: #ff9900;
+    font-size: 1.2rem;
+}
+
+.footer_copy {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
