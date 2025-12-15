@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: system-ui, sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
     scroll-padding: 10px;
 }
 .header_section {
@@ -19,7 +20,6 @@
     box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.06),
     0 8px 16px rgba(0, 0, 0, 0.08);
-    font-weight: bold;
 
 }
 .header_container {
@@ -35,8 +35,8 @@
     gap: 20px;
 }
 
-.header_icons i {
-    font-size: 1.1rem;
+.icon_span {
+    font-size: 1.05rem;
     color: white;
     cursor: pointer;
     transition: color 0.3s;
@@ -56,7 +56,6 @@
 .nav_link {
     color: white;
     text-decoration: none;
-    font-weight: 500;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -65,10 +64,11 @@
 .nav_link:hover {
     color: #ff9900;
 }
-.login_span {
-    padding: 0.6rem 1.3rem 0.6rem 0;
-    border-radius: 1.6rem;
+.nav_login {
     color: white;
+}
+.hamburger-menu {
+    display: none;
 }
 /* Hero Starts */
 .hero_wrapper{
@@ -83,6 +83,7 @@
     text-align: center;
     position: relative;
     user-select: none;
+    font-weight: 650;
 }
 
 .hero_section::after {
@@ -95,8 +96,7 @@
     z-index: 1;
 }
 h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: clamp(2.1rem , 5vw , 4rem);
     text-shadow:
         0 3px 8px rgba(0,0,0,0.6),
         0 0 12px rgba(255,153,0,0.35);
@@ -105,9 +105,11 @@ h1 {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    padding: 20px;
     color: #fff;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.hero_content p {
+    font-weight: 400;
 }
 .reservations{
     display: flex;
@@ -341,4 +343,22 @@ details p {
     padding-top: 20px;
     font-size: 0.9rem;
     opacity: 0.6;
+}
+/* MEDIA QUERIES */
+
+@media (width <= 1000px) {
+    .navigation , .header_icons {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+        color: white;
+        font-size: 1.7rem;
+    }
+}
+
+@media (width <= 800px) {
+    .input-passengers {
+        display: none;
+    }
 }
