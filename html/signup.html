@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/allForms.css">
+</head>
+<body>
+    <form class="contact-form">
+        <div class="logo">
+            <a href="/index.html">
+                <i class="fas fa-plane"></i> FlightReserve
+            </a>
+        </div>
+        
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your Name" required minlength="3">
+        
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+        
+        <label for="confirm-password">Confirm Password *</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required minlength="6">
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
