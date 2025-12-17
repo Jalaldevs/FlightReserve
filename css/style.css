@@ -112,7 +112,7 @@
     z-index: 1;
 }
 h1 {
-    font-size: clamp(2.1rem , 5vw , 3.7rem);
+    font-size: clamp(3.4rem , 5vw , 3.7rem);
     height: 80%;
     text-shadow:
         0 3px 8px rgba(0,0,0,0.6),
@@ -129,7 +129,6 @@ h1 {
     margin-bottom: 2rem;
 }
 .hero_content p {
-    font-weight: 400;
     width: 80%;
 }
 .reservations{
