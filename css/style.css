@@ -413,7 +413,7 @@ details p {
     }
 
 }
-@media (width <= 800px) {
+@media (width <= 680px) {
     .input-passengers {
         display: none;
     }
